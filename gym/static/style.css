@@ -1,0 +1,63 @@
+
+
+form {
+    font-size: 25pt;
+    text-align: center;
+}
+
+/* ##################################################### */
+/* dropdown */
+
+.dropdown { 
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.drop_button {
+    width: 100%;
+    background-color: rgb(87, 255, 157);
+    color:rgb(0, 0, 0);
+    padding: 2%;
+    margin: auto;
+    font-size: 20pt;
+    border: 2px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.drop_button:hover, .drop_button:focus {
+    background-color: rgb(169, 255, 205);
+}
+
+.drop_content {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.show {display:block;}
+
+.drop_content li {
+    text-align: center;
+    list-style: none;
+    padding: auto;
+    margin: 10px;
+    border: 2px solid;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
+    
+}
+
+.drop_content ul {
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+}

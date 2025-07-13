@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <form method="Post">
+            
+            <label>Food Item:</lable><br>
+            <input type="text" name="food" required><br><br>
+
+            <label>Total Protein:</lable><br>
+            <input type="number" name="protein" required><br><br>
+
+            <label>Total calories:</lable><br>
+            <input type="number" name="calories" required><br><br>
+
+            <label>Date:</lable><br>
+            <input type="date" name="date" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

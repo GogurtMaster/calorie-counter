@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>test for server</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <script src="{{ url_for('static', filename='script.js') }}"></script>                           
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+
+        <h1>we doing flask now</h1>
+        <a href="form">form</a>
+
+        <hr>
+
+        <div class="dropdown">
+            <button type="button" class="drop_button" id="dropdownToggle">dropdown</button>
+            <div id="list_dropdown" class="drop_content">
+                {% if entries %}
+                <ul>
+                    {% for row in entries %}
+                    <li>Food Item: {{ row['food'] }}<br>{{ row['date'] }}<br>Calories: {{ row['calories'] }}<br>Protien: {{ row['protein'] }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+
+    </body>
+</html>
